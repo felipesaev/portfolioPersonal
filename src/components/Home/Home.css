@@ -12,6 +12,12 @@
 
 }
 
+.container-text {
+  display: flex;
+  margin: 10px auto;
+}
+
+
 .content-img {
   display: flex;
   justify-content: center;
@@ -26,5 +32,18 @@
 
 .context-title h2 {
   font-size: max(30px,5vw); 
+}
+
+.p-2 {
+  font-family: 'IBM3270';
+  font-size: max(15px, 1.5vw);
+  padding: 18px;
+  text-align: center;
+  margin: 15px auto;
+  align-items: center;
+}
+
+.arrow-down {
+  align-items: center;
 }
 
