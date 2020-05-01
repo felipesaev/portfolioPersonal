@@ -2,6 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../utils/fontawesome'
 
+//Components
+import Navigation from '../Navigation/Navigation'
+
 
 import Logo from '../../images/logo.png';
 // Style
@@ -9,7 +12,9 @@ import './Home.css'
 
 const Home = () => {
   return (
-  <div className="container">
+  
+    <div className="container">
+      <Navigation/>
       <div className="content-img">
         <img src={Logo}/>
       </div>
@@ -40,7 +45,7 @@ const Home = () => {
           
         </div>
       </div>
-        <FontAwesomeIcon className="arrow-down" icon={'angle-down'} />
+        <FontAwesomeIcon aria-hidden="true" id="scroll" className="bounce" icon={'angle-down'} />
       
     </div>
   )

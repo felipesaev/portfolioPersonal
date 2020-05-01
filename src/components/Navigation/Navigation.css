@@ -1,0 +1,55 @@
+/*Navigation*/
+
+nav.nav--section  {
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.navbar-brand {
+  color: black;
+}
+.nav-link {
+  text-transform: lowercase;
+  color: black;
+}
+.nav-link:hover {
+  color: grey;
+}
+.navbar-toggler:focus {
+  outline: 1px dotted;
+}
+
+/* ANIMATIONS */
+/*            */
+
+.scrolled nav {
+  display: block;
+  opacity: 1;
+  background-color: white;
+  transition: all 0.5s linear;
+}
+
+.animate--first {
+  opacity: 0;
+  transform: translateX(70rem);
+}
+
+.animate--first__transform {
+  opacity: 1;
+  transform: translateX(0rem);
+  transition: all 1s ease-in-out;
+}
+
+.animate--second {
+  opacity: 0;
+  transform: translateX(-70rem);
+}
+
+.animate--second__transform {
+  opacity: 1;
+  transform: translateX(0rem);
+  transition: all 1s ease-in-out;
+}
+
+/* BOUNCY ARROW */
+

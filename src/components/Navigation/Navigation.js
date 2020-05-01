@@ -1,10 +1,16 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../../utils/fontawesome'
+
+import './Navigation.css'
 
 const Navigation = () => {
+
+
   return (
-    <nav className="nav">
+    <nav className="nav--section">
       <div className="container-fluid">
-        <a href="">Felipe Costa</a>
+        <a href="#top" className="navbar-brand">Felipe Costa</a>
         <button 
         className="navbar-toggler"
         type="button"
@@ -14,16 +20,14 @@ const Navigation = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
         >
-        <i id="navbar-toggle" className="fas fa-angle-down" aria-hidden="true">
-
-        </i>
+        <FontAwesomeIcon id="navbar-toggle" aria-hidden="true" className="arrow-down" icon={'angle-down'} />
         </button>
       </div>
-      <div className="navbar-collapse" id="navbarNav">
+      <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item"><a href="#">Blog</a></li>
-          <li className="nav-item"><a href="#">Sobre</a></li>
-          <li className="nav-item"><a href="#">Projetos</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Blog</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Sobre</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">Projetos</a></li>
         </ul>
       </div>
     </nav>
