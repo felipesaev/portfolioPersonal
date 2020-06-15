@@ -1,11 +1,14 @@
 import React from "react"
 
 import Home from "../components/Home/Home"
+import Projects from "../components/Projects/Projects"
 
+import '../style/Global.css'
 const IndexPage = () => (
-  <div>
+  <>
     <Home/>
-  </div> 
+    <Projects/>
+  </>
 )
 
 export default IndexPage
